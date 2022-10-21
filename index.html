@@ -1,147 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Responsive Website</title>
-		<link rel="stylesheet" href="./css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Responsive Website</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/utilites.css">
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
+</head>
+<body>
+	
 		<!-- Navbar -->
-		<nav>
+	<div class="navbar">
+		<div class="container flex">
 			<h1 class="logo">Loruki.</h1>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Docs</a></li>
-			</ul>
-		</nav>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="./features.html">Features</a></li>
+					<li><a href="#">Docs</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 
-		<div class="header-container">
-			<div class="header-text">
-				<h1>Easier Deployment</h1>
-				<p>
-					Deploy web apps of all kinds, from large scale enterprise APIs to
-					static websites for individuals. Fill out the form to try a demo of
-					our platform
-				</p>
-				<a href="#">Read More</a>
+	<!-- Showcase -->
+		<section class="showcase">
+			<div class="container grid">
+				<div class="showcase-text">
+					<h1>Easier Deployment</h1>
+					<p>
+						Deploy web apps of all kinds, from large scale enterprise APIs to
+						static websites for individuals. Fill out the form to try a demo of
+						our platform
+					</p>
+					<a href="#" class="btn btn-outline">Read More</a>
+				</div>
+				<div class="showcase-form card flex" >
+					<form action="#">
+						<h2>Request a Demo</h2>
+						<div class="form-control">
+							<input type="text" placeholder="Name" />
+						</div>
+						<div class="form-control">
+							<input type="text" placeholder="Company Name"/>
+						</div>
+						<div class="form-control">
+							<input type="text" placeholder="Email" />
+						</div>
+						<input type="submit" value="Send" class="btn btn-primary">
+					</form>
+				</div>
 			</div>
-			<div class="header-form">
-				<form action="#">
-					<h2>Request a Demo</h2>
-					<input type="text" placeholder="Name" />
-					<input type="text" placeholder="Company Name" />
-					<input type="email" placeholder="Email" />
-					<button type="submit">Send</button>
-				</form>
+		</section>
+
+	<!-- Stats -->
+	<section class="stats">
+		<div class="container">
+			<h3 class="text-center my-1 stats-heading">
+				Welcome to the best platform for building 
+				applications of all types with modern architecture 
+				and scaling
+			</h3>
+			<div class="grid grid-3 my-3 text-center">
+				<div>
+					<i class="fas fa-server fa-3x"></i>
+					<h3>10,345,865</h3>
+					<p class="text-secondary">Deployment</p>
+				</div>
+				<div>
+					<i class="fas fa-upload fa-3x"></i>
+					<h3>745 TB</h3>
+					<p class="text-secondary">Published</p>
+				</div>
+				<div>
+					<i class="fas fa-project-diagram fa-3x"></i>
+					<h3>1,453,863</h3>
+					<p class="text-secondary">Project</p>
+				</div>
 			</div>
 		</div>
+	</section>
 
-		<!-- Stats -->
-		<div class="stats">
-			<p>
-				Welcome to the best platform for building applications of all types with
-				modern architecture and scaling
-			</p>
-			<div class="logos">
-				<div class="logo">
-					<i class="fa-solid fa-server fa-3x"></i>
-					<p>10,349,405</p>
-					<p>Deployment</p>
+	<!-- CLI img -->
+	
+	<section class="cli">
+		<div class="container">
+			<div class="grid">
+				<img src="./images/cli.png" alt="">
+				<div class="card">
+					<h3>Easy to use, cross platform CLI</h3>
 				</div>
-				<div class="logo">
-					<i class="fa-solid fa-upload"></i>
-					<p>987 TB</p>
-					<p>Published</p>
-				</div>
-				<div class="logo">
-					<i class="fa-solid fa-diagram-project"></i>
-					<p>2,249,607</p>
-					<p>Projects</p>
-				</div>
-
-				<div class="img-container">
-					<img src="./images/npm.png" alt="Npm Packeg" />
-					<div class="img-caption">
-						<div class="first">Easy to use, cross platform CLI</div>
-						<div class="second">Deploy in seconds</div>
-					</div>
+				<div class="card">
+					<h3>Deploy in seconds</h3>
 				</div>
 			</div>
 		</div>
+	</section>
+	
 
-		<div class="read-more">
-			<div class="text-container">
-				<h1>Extreme Cloud Hosting</h1>
-				<p>
-					Cloud hosting like you've never seen. Fast,efficient and scalable.
-				</p>
-				<a href="#">Read More</a>
-			</div>
-			<img src="./images/cloud.png" alt="" />
-		</div>
-
-		<!-- logo -->
-		<div class="langauge-container">
-			<h1>Supported Langauges</h1>
-			<div class="langauge">
-				<div class="lang">
-					<p>node.js</p>
-					<img src="./images/logos/node.png" alt="Nodejs" />
+	<!-- Cloud Hosting -->
+	<section class="cloud">
+		<div class="container">
+			<div class="grid my-1">
+				<div class="text flex text-center">
+					<h1>Extreme Cloud Hosting</h1>
+					<p>Cloud hosting like you've never seen.Fast, efficient and scalable.</p>
+					<a href="#" class="btn btn-secondary">Read More</a>
 				</div>
-				<div class="lang">
+
+				<img src="./images/cloud.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- Suppoted Langauges -->
+	<section class="langauge">
+		<div class="container">
+			<h2>Supported Langauges</h2>
+			<div class="flex list">
+				<div class="card item flex">
+					<p>Node.js</p>
+					<img src="./images/logos/node.png" alt="">
+				</div>
+				<div class="card item flex">
 					<p>Python</p>
-					<img src="./images/logos/python.png" alt="python" />
+					<img src="./images/logos/python.png" alt="">
 				</div>
-				<div class="lang">
+				<div class="card item flex">
 					<p>C#</p>
-					<img src="./images/logos/csharp.png" alt="Csharp" />
+					<img src="./images/logos/csharp.png" alt="">
 				</div>
-				<div class="lang">
+				<div class="card item flex">
 					<p>Ruby</p>
-					<img src="./images/logos/ruby.png" alt="Ruby" />
+					<img src="./images/logos/ruby.png" alt="">
 				</div>
-				<div class="lang">
-					<p>php</p>
-					<img src="./images/logos/php.png" alt="PHP" />
+				<div class="card item flex">
+					<p>PHP</p>
+					<img src="./images/logos/php.png" alt="">
 				</div>
-				<div class="lang">
-					<p>Scala</p>
-					<img src="./images/logos/scala.png" alt="scala" />
+				<div class="card item flex">
+					<p>scala</p>
+					<img src="./images/logos/scala.png" alt="">
 				</div>
-				<div class="lang">
-					<p>Clojure</p>
-					<img src="./images/logos/clojure.png" alt="clojure" />
+				<div class="card item flex">
+					<p>clojure</p>
+					<img src="./images/logos/clojure.png" alt="">
 				</div>
 			</div>
 		</div>
+	</section>
 
-        <!-- footer -->
-        <footer>
-            <div class="first">
-                <h2>Loruki</h2>
-                <p>Copyright &#169 2022</p>
-            </div>
-            <div class="second">
-                <p>Home</p>
-                <p>Feature</p>
-                <p>Docs</p>
-            </div>
-            <div class="third">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </footer>
-	</body>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="grid">
+				<div class="footer-heading">
+					<h2>Loruki</h2>
+					<p>Copyright &#169 2022</p>
+				</div>
+				<div class="footer-links">
+					<a href="#">Home</a>
+					<a href="#">Feature</a>
+					<a href="#">Docs</a>
+				</div>
+				<div class="footer-logos">
+					<a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+				</div>
+			</div>
+	</footer>
+</body>
 </html>
